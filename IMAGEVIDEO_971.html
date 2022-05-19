@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Responsvie Slider With Swipe Effect 2021</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1,minimum=scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+      <link rel="stylesheet" type="text/css" href="swipe.css">
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="12 (1).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (2).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (3).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (4).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (5).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (6).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (7).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (8).jpeg"></div>
+          <div class="swiper-slide"><img src="12 (4).jpeg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+
+
+
+
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 700,
+            modifier: 1,
+            slideShadows: true,
+          },
+      
+          loop: true,
+          autoplay: {
+          delay: 700,
+          disableOnInteraction: false,
+        },
+        });
+            
+      </script>   
+</body> 
+</html>
